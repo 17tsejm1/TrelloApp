@@ -16,7 +16,13 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // Insert code here to initialize your application
+    NSRect frame=[NSScreen mainScreen].frame ;
+    [self.window setFrame:frame display:YES animate:YES];
+    NSURL *url = [NSURL URLWithString:@"https://trello.com"];
+    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
+    [[[self webView] mainFrame] loadRequest:urlRequest];
+    [self.window setContentView:self.webView];
+    [self.window setTitle:@"TrelloApp"];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {

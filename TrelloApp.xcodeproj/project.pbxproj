@@ -12,6 +12,7 @@
 		9408BBC719D3F64A003D4CF6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9408BBC619D3F64A003D4CF6 /* Images.xcassets */; };
 		9408BBCA19D3F64A003D4CF6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9408BBC819D3F64A003D4CF6 /* MainMenu.xib */; };
 		9408BBD619D3F64A003D4CF6 /* TrelloAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9408BBD519D3F64A003D4CF6 /* TrelloAppTests.m */; };
+		9408BBE019D3F798003D4CF6 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9408BBDF19D3F798003D4CF6 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		9408BBCF19D3F64A003D4CF6 /* TrelloAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrelloAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9408BBD419D3F64A003D4CF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9408BBD519D3F64A003D4CF6 /* TrelloAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrelloAppTests.m; sourceTree = "<group>"; };
+		9408BBDF19D3F798003D4CF6 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9408BBE019D3F798003D4CF6 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +61,7 @@
 		9408BBB319D3F64A003D4CF6 = {
 			isa = PBXGroup;
 			children = (
+				9408BBDF19D3F798003D4CF6 /* WebKit.framework */,
 				9408BBBE19D3F64A003D4CF6 /* TrelloApp */,
 				9408BBD219D3F64A003D4CF6 /* TrelloAppTests */,
 				9408BBBD19D3F64A003D4CF6 /* Products */,
@@ -398,6 +402,7 @@
 				9408BBDB19D3F64A003D4CF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9408BBDC19D3F64A003D4CF6 /* Build configuration list for PBXNativeTarget "TrelloAppTests" */ = {
 			isa = XCConfigurationList;
@@ -406,6 +411,7 @@
 				9408BBDE19D3F64A003D4CF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
