@@ -21,6 +21,8 @@
     NSURL *url = [NSURL URLWithString:@"https://trello.com"];
     NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
     [[[self webView] mainFrame] loadRequest:urlRequest];
+    [self.window setCollectionBehavior:
+     NSWindowCollectionBehaviorFullScreenPrimary];
     [self.window setContentView:self.webView];
     [self.window setTitle:@"TrelloApp"];
 }
