@@ -672,19 +672,24 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="480" height="360"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1080"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
             <view key="contentView" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <webView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dn1-9k-giv">
+                    <webView ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dn1-9k-giv">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
-                        <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12">
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="360" id="1xu-ef-Hia"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="550" id="jn2-T9-uwh"/>
+                        </constraints>
+                        <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12" javaEnabled="NO">
                             <nil key="identifier"/>
                         </webPreferences>
                     </webView>
                 </subviews>
             </view>
+            <point key="canvasLocation" x="328" y="239"/>
         </window>
     </objects>
 </document>
